@@ -1,16 +1,25 @@
 #include <iostream>
 using namespace std;
 
-//단순 할당연산자 확인
+//암묵적 자료형 승격
 int main()
 {
-    int x;
-    int y;
-
-    cout << "할당 표현식의 리턴값: " <<(x = 14) << endl;
-    cout << "변수 x의 값: " << x << endl;
+    bool x = true;
+    char y = 'A';
+    short z = 14;
+    float t = 24.5;
     
-    cout << "할당 표현식의 리턴값: " <<(y = 63) << endl;
-    cout << "변수 x의 값: " << y << endl;
+    //bool -> int
+    cout << "x + 100의 자료형: " << typeid(x + 100).name() << endl;
+    cout << "x + 100의 값: " << x + 100 << endl;
+    //char -> int
+    cout << "y + 1000의 자료형: " << typeid(y + 1000).name() << endl;
+    cout << "y + 1000의 값: " << y + 1000 << endl;
+    // short -> int
+    cout << "z + 100의 자료형: " << typeid(z + 100).name() << endl;
+    cout << "z + 100의 값: " << z + 100 << endl;
+    //float -> double
+    cout << "t + 15000.2의 자료형: " << typeid(t + 15000.2).name() << endl;
+    cout << "t + 15000.2의 값: " << t + 15000.2 << endl;
     return 0;
 }
