@@ -3,8 +3,12 @@ using namespace std;
 
 int main()
 {
-    cout << false << "  " << "A" << "  " << "Hello" << endl;
-    cout << 23412 << "  " << 123456789L << endl;
-    cout << 245.83F << "  " << 114.782 << "  " << 2.031L << endl;
+    int x = 4;
+
+    cout << "괄호가 있는 경우의 값: " << (x + 3) * 5 << endl;
+    cout << "괄호가 없는 경우의 값: " << x + 3 * 5 << endl;
+
+    cout << "괄호가 있는 경우의 값: " << 12 / (x + 2) << endl;
+    cout << "괄호가 없는 경우의 값: " << 12 / x + 2 << endl;
     return 0;
 }
