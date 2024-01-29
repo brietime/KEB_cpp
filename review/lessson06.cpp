@@ -1,21 +1,19 @@
 #include <iostream>
-#include <cctype>
+#include <ctime>
 using namespace std;
 
 int main()
 {
-    char ch;
-    int count = 0;
+    long elapsedSeconds = time(0);
+    int currentSecond = elapsedSeconds % 60;
 
-    while (cin >> noskipws >> ch)
-    {
-        if(isalpha(ch))
-        {
-            count++;
-        }
-        ch = toupper(ch);
-        cout << ch;
-    }
-    cout << "number of alphabets: " << count;
+    long elapsedMinutes = elapsedSeconds / 60;
+    int currentMinute = elapsedMinutes % 60;
+
+    long elapsedHours = elapsedMinutes / 60;
+    int currentHour = elapsedHours % 24;
+
+    cout << "현재시간 = ";
+    cout << currentHour << " : " << currentMinute << " : " << currentSecond;
     return 0;
 }
