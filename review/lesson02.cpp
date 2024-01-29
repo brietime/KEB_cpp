@@ -3,21 +3,8 @@ using namespace std;
 
 int main()
 {
-    int balance = 0;
-    int transaction;
-
-    cout << "첫번째 거래 금액 입력: ";
-    cin >> transaction;
-    balance = balance + transaction;
-
-    cout << "두번째 거래 금액 입력: ";
-    cin >> transaction;
-    balance = balance + transaction;
-
-    cout << "세번째 거래 금액 입력: ";
-    cin >> transaction;
-    balance = balance + transaction;
-
-    cout << "계좌의 잔액은 "<< balance << "달러입니다."<< endl;
+    cout << "short int의 크기는 " << sizeof(short int) << "바이트입니다."<< endl;
+    cout << "int의 크기는 " << sizeof(int) << "바이트입니다."<< endl;
+    cout << "long int의 크기는 " << sizeof(long int) << "바이트입니다."<< endl;
     return 0;
 }
