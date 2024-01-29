@@ -3,14 +3,15 @@ using namespace std;
 
 int main()
 {
-    int x = -1245;
-    unsigned int y = 1245;
-    unsigned int z = -2367;
-    unsigned int t = 14.56;
+    int x;
+    unsigned int y;
+    
+    x = 1245;
+    y = -14567;
 
     cout << x << endl;
     cout << y << endl;
-    cout << z << endl;
-    cout << t << endl;
+    cout << 1234 << endl;
+    cout << 123267L << endl;
     return 0;
 }
