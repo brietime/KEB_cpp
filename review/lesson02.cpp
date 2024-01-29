@@ -3,15 +3,10 @@ using namespace std;
 
 int main()
 {
-    int x;
-    unsigned int y;
-    
-    x = 1245;
-    y = -14567;
+    char first = 'A';
+    char second = 65;
 
-    cout << x << endl;
-    cout << y << endl;
-    cout << 1234 << endl;
-    cout << 123267L << endl;
+    cout << first << endl;
+    cout << second << endl; 
     return 0;
 }
